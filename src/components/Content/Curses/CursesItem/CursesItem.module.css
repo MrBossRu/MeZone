@@ -1,0 +1,58 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 90%;
+    height: 300px;
+    background-color: rgb(245, 241, 241);
+    background: linear-gradient(to right, lightgrey, rgb(204, 202, 202));
+    border: 1px solid grey;
+    border-radius: 6px;
+    float: left;
+    margin: 10px;
+    padding: 10x;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardwrapper {
+    min-height: 90%;
+}
+
+.cardfooter {
+    margin-top: -50px;
+    height: 50px;
+}
+
+.cursdelay {
+    float: left;
+    margin: 10px;
+    color: grey
+}
+
+.cursbtn {
+    float: right;
+    height: 30px;
+    margin: 10px;
+    background-color: lightgreen;
+    border-radius: 6px;
+    width: 100px;
+}
+
+.cursbtn:hover {
+    float: right;
+    height: 30px;
+    margin: 10px;
+    background-color: rgb(196, 245, 196);
+    border-radius: 6px;
+    width: 100px;
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        width: 45%;
+    }
+}

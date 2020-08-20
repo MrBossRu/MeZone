@@ -1,0 +1,53 @@
+* {
+    /*border: 1px solid red;*/
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.content {
+    padding: 10px;
+    width: 98%;
+    height: 100%;
+    min-height: calc(100vh - 170px);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.wrapper {
+    min-height: calc(100vh - 80px);
+    height: 100%;
+}
+
+footer, header {
+    height: 70px;
+    color: grey;
+}
+
+.datacontent {
+    height: 100%;
+    min-height: calc(100vh - 210px);
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+

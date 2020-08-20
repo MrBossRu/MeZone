@@ -1,0 +1,133 @@
+.menubtn {
+    float: left;
+    margin-top: 11px;
+}
+
+.el1,
+.el2,
+.el3 {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .el1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.change .el2 {
+    opacity: 0;
+}
+
+.change .el3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.closesidenavbtn {
+    text-align: right;
+
+}
+
+.logo {
+    margin-top: 8px;
+    padding: 0;
+    float: left;
+}
+
+.logo a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    float: left;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.regmenu {
+    float: right;
+    display: none;
+}
+
+.regmenu li {
+    float: right;
+    display: block;
+    margin-left: 40px;
+}
+
+.regmenu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+}
+
+.regmenu a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 900px) {
+    .menubtn {
+        display: none;
+    }
+
+    .closesidenavbtn {
+        text-align: right;
+        display: inline;
+    }
+
+    .regmenu {
+        display: inline;
+    }
+}
