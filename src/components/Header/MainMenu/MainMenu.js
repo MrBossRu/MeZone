@@ -1,10 +1,10 @@
 import React, {useLayoutEffect} from "react";
 import {NavLink} from "react-router-dom";
-import  Style from "./MainMenu.module.css"
+import  Style from "./MainMenu.module.css";
 
-export default function MainMenu() {
+export default function MainMenu(props) {
     function btnClick() {
-        document.getElementById("menubtn").classList.toggle("change");
+        document.getElementById("menubtn").classList.toggle(Style.change);
         if (document.getElementById("mySidenav").style.width == "250px") {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("container").style.marginLeft = "0";
@@ -28,22 +28,14 @@ export default function MainMenu() {
                         ×
                     </a>
                 </div>
-                <NavLink to="/about">О Нас</NavLink>
-                <NavLink to="/curses">Курсы</NavLink>
-                <a href="#">Регистрация</a>
-                <a href="#">Вход</a>
+                {props.sideMenu.map(el => (<NavLink to={el.href}>{el.name}</NavLink>))}
             </div>
             <div className={Style.logo}>
                 <a href="#">MeZone</a>
             </div>
             <div className={Style.menu}>
                 <ul>
-                    <li>
-                        <NavLink to="/About">О Нас</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/Curses">Курсы</NavLink>
-                    </li>
+                    {props.mainMenu.map(el => (<li><NavLink to={el.href}>{el.name}</NavLink></li>))}
                 </ul>
             </div>
             <div className={Style.regmenu}>

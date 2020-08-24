@@ -72,6 +72,7 @@
 
 .menu {
     float: left;
+    display: none;
 }
 
 .menu li {
@@ -118,6 +119,9 @@
 }
 
 @media screen and (min-width: 900px) {
+    .menu{
+        display: block;
+    }
     .menubtn {
         display: none;
     }

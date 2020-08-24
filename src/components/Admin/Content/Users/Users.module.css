@@ -1,0 +1,46 @@
+.header{
+    height: 80px;
+}
+.title{
+    margin-left: 10px;
+    float: left;
+}
+.addbtn{
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    background-color: #0073b7 !important;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    touch-action: manipulation;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.addbtn:active{
+    border: 1px solid sandybrown;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.icon-search {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    text-align: center;
+    width: 50px;
+}
+
+.fa:before{
+    font-family: FontAwesome;
+    font-size: 130px;
+    padding-right: 5px !important;
+    content: "\f002";
+}

@@ -13,6 +13,7 @@ html, body {
     max-width: 930px;
     margin: 0 auto;
     min-height: 100%;
+    transition: 0.5s;
 }
 
 .content {
@@ -32,6 +33,7 @@ html, body {
 .wrapper {
     min-height: calc(100vh - 80px);
     height: 100%;
+    transition: 0.5s;
 }
 
 footer, header {

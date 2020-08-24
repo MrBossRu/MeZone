@@ -1,0 +1,17 @@
+* {
+   /* border: 1px solid red;*/
+}
+
+.AdminZone{
+    background-color: #333333;
+}
+.AdmMenu{
+    background-color: #818181;
+
+}
+.SideBar{
+    background-color: #61dafb;
+}
+.AdmContent{
+    background-color: antiquewhite;
+}

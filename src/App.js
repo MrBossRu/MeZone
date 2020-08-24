@@ -1,25 +1,18 @@
 import React from "react";
 import Footer from "./components/Footer/Footer"
-import About from "./components/Content/About/About";
-import Header from "./components/Header/Header"
-import Curses from "./components/Content/Curses/Curses";
-import {BrowserRouter, Route} from "react-router-dom";
-import MyEditor from "./components/Content/Curses/Curs/Curs";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Content from "./components/Content/Content";
+import Admin from "./components/Admin/Admin";
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
             <div className="container" id="container">
-                <div class="wrapper">
-                    <div className="clearfix">
-                        <Header/>
-                    </div>
-                    <hr/>
-                    <div className="content clearfix">
-                        <Route path='/about' component={About}/>
-                        <Route path='/curses' component={Curses}/>
-                        <Route path='/curs' component={MyEditor}/>
-                    </div>
+                <div className="wrapper">
+                    <Switch>
+                        <Route path='/admin' render={() => <Admin/>}/>
+                        <Route render={() => <Content curses={props.curses}/>}/>
+                    </Switch>
                 </div>
                 <Footer/>
             </div>
